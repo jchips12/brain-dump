@@ -14,15 +14,16 @@
           <td><input type="text" class="form-control" data-ng-model="vm.fname" maxlength="25" /></td>
           <td><input type="text" class="form-control" data-ng-model="vm.lname" maxlength="25" /></td>
           <td><input type="text" data-tel-no class="form-control" data-ng-model="vm.contactNo" maxlength="12" /></td>
-          <td><input type="button" class="form-control input-sm" data-ng-click="vm.addUser(vm.fname,vm.lname,vm.contactNo)" 
-          	         data-ng-disabled="utility.isEmpty(vm.fname,vm.lname,vm.contactNo)" value="add">
-          </td>
+          <td><input type="button" class="form-control input-sm"
+            data-ng-click="vm.addUser(vm.fname,vm.lname,vm.contactNo)"
+            data-ng-disabled="utility.isEmpty(vm.fname,vm.lname,vm.contactNo)" value="add"></td>
         </tr>
         <tr data-ng-repeat="user in vm.users | reverseArr">
           <td>{{ user.fname }}</td>
           <td>{{ user.lname }}</td>
           <td>{{ user.contactNo }}</td>
-          <td><input type="button" class="form-control input-sm" data-ng-click="vm.deleteUser(user.id)" value="delete"/></td>
+          <td><input type="button" class="form-control input-sm" data-ng-click="vm.deleteUser(user.id)"
+            value="delete" /></td>
         </tr>
       </tbody>
     </table>

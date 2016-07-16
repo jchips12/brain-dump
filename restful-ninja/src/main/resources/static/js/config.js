@@ -11,6 +11,11 @@
             templateUrl : '/view/home.html',
             controller : 'homeCtrl',
             controllerAs : 'vm'
+        }).state('order', {
+            url : '/order',
+            templateUrl : '/view/order.html',
+            controller : 'orderCtrl',
+            controllerAs : 'vm'
         });
     }
 
